@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Consultoría y Desarrollo de Software - ConIngenio">
+  <title>ConIngenio - Consultoría y Desarrollo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img id="logo-img" src="img/logo-day.png" alt="ConIngenio Logo">
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <button id="modo-btn" aria-label="Cambiar modo">🌙</button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <div class="titulo-container">
+        <h1>Soluciones digitales</h1>
+        <img id="titulo-logo" src="img/titulo-logo-day.png" alt="Logo de ConIngenio">
+      </div>
+      <p>
+        Bienvenidos a ConIngenio, una empresa dedicada a entregar soluciones digitales a medida,
+        pensadas para potenciar los desafíos de cada cliente. Nuestro enfoque combina la experiencia en 
+        consultoría tecnológica con el desarrollo de software moderno y flexible. Descubre nuestros 
+        servicios, conoce nuestra misión y visión, y contáctanos para llevar tu idea al siguiente nivel.
+      </p>
+    </section>
+
+    <section id="servicios">
+      <h2><center>Nuestros Servicios</center></h2>
+      <div id="servicios-container" class="servicios-grid">
+   
+        <div class="tarjeta-servicio">
+          <h3>Consultoría Digital</h3>
+          <p>Te guiamos en el camino hacia la transformación digital. Analizamos tu empresa, identificamos oportunidades de mejora y proponemos estrategias hechas a tu medida.</p>
+          <ul>
+            <li>Mejoramos procesos con tecnología.</li>
+            <li>Te ayudamos a ser más eficiente.</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <h3>Soluciones Multiexperiencia</h3>
+          <p>Conectamos a las personas con tus servicios o productos, sin importar el dispositivo o canal que usen. Creamos experiencias digitales integradas que son fáciles de usar.</p>
+          <ul>
+            <li>Experiencia unificada en todos los dispositivos.</li>
+            <li>Interacciones modernas y prácticas.</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <h3>Evolución de Ecosistemas</h3>
+          <p>Nos enfocamos en modernizar y optimizar tu infraestructura tecnológica para que sea escalable, segura y preparada para el crecimiento.</p>
+          <ul>
+            <li>Reducción de costos mientras modernizas sistemas.</li>
+            <li>Construimos una base tecnológica sólida.</li>
+          </ul>
+        </div>
+
+        <div class="tarjeta-servicio">
+          <h3>Soluciones Low-Code</h3>
+          <p>Aceleramos el desarrollo de aplicaciones personalizadas usando herramientas de bajo código, permitiéndote tener aplicaciones funcionales en menor tiempo.</p>
+          <ul>
+            <li>Ahorras tiempo y dinero sin sacrificar calidad.</li>
+            <li>Aplicaciones flexibles y adaptables.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2><center>Nosotros</center></h2>
+      <div id="nosotros-container" class="nosotros-grid">
+
+        <div class="tarjeta-servicio">
+          <h3>Misión</h3>
+          <p>
+            En ConIngenio, transformamos negocios mediante soluciones tecnológicas innovadoras. Nuestra misión es ayudar a nuestros clientes a optimizar procesos y crecer en el mundo digital, ofreciendo asesoramiento personalizado y herramientas que generen valor sostenible.
+          </p>
+        </div>
+        <br>
+
+        <div class="tarjeta-servicio">
+          <h3>Visión</h3>
+          <p>
+            Aspiramos a ser líderes en consultoría digital y desarrollo de software, reconocidos a nivel nacional e internacional por nuestra creatividad y excelencia, colaborando estrechamente con nuestros clientes en un entorno tecnológico en constante evolución.
+          </p>
+        </div>
+        <br>
+
+        <div class="tarjeta-servicio">
+          <h3>Valores</h3>
+          <ul>
+            <li>Integridad y honestidad</li>
+            <li>Innovación constante</li>
+            <li>Compromiso con el cliente</li>
+            <li>Colaboración en equipo</li>
+            <li>Orientación a resultados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2><center>Contáctanos</center></h2>
+      <form id="form-contacto" class="formulario">
+        <input type="text" name="nombre" placeholder="Nombre completo" required />
+        <select name="servicio" required>
+          <option value="">Selecciona un servicio</option>
+          <option value="Consultoría Digital">Consultoría Digital</option>
+          <option value="Soluciones Multiexperiencia">Soluciones Multiexperiencia</option>
+          <option value="Evolución de Ecosistemas">Evolución de Ecosistemas</option>
+          <option value="Soluciones Low-Code">Soluciones Low-Code</option>
+        </select>
+        <textarea name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ConIngenio | Av. Providencia 1234, Oficina 601 - Santiago, Chile</p>
+    <p>Tel: +56 2 1234 5678 | <a href="mailto:info@coningenio.cl">info@coningenio.cl</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
